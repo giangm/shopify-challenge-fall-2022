@@ -1,4 +1,4 @@
-from application import app
+from main import app
 # from app.forms import *
 from flask import render_template
 

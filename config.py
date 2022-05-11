@@ -13,7 +13,7 @@ class Config(object):
     SECRET_KEY = secrets.token_hex(16)
 
     ## Database configs
-    SQLALCHEMY_DATABASE_URI = "sqlite:///inventory.db"
+    SQLALCHEMY_DATABASE_URI = "sqlite:///database.db"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     ## Location for client csv

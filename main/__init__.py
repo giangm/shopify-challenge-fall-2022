@@ -17,4 +17,4 @@ db = SQLAlchemy(app)
 ## Logging configs
 logging.basicConfig(filename="app.log", level=logging.DEBUG, format=f"%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s")
 
-from application import views
+from main import views

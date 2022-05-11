@@ -1,6 +1,6 @@
-from application import app, db
+from main import app, db
 from flask import Blueprint, request, redirect, url_for, flash
-from application.models import Inventory
+from main.models import Inventory
 
 crud = Blueprint("crud", __name__)
 

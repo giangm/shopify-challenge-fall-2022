@@ -1,4 +1,4 @@
-from application import db
+from main import db
 
 class Inventory(db.Model):
     """
