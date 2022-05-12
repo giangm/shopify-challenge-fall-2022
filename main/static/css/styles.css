@@ -1,0 +1,66 @@
+html, body {
+    margin: 0;
+    padding: 10px;
+    overflow-y: hidden;
+}
+
+.containerbox {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 10px 10px; 
+    grid-template-areas: 
+        "headerbox headerbox headerbox headerbox"
+        "box1 box2 box3 box4"
+        "box5 box5 box5 box5";
+  }
+
+.headerbox {
+    grid-area: headerbox; 
+    height: 5vh;
+    padding: 10px;
+    border: 2px black solid;
+    text-align: center;
+    font-weight: bold;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 10px 10px;
+    grid-template-areas: 
+        ". msg .";
+}
+
+.box1 { 
+    grid-area: box1; 
+    height: 40vh;
+    padding: 10px;
+    border: 2px red solid;
+}
+
+.box2 { 
+    grid-area: box2;
+    height: 40vh;
+    padding: 10px;
+    border: 2px blue solid;
+}
+
+.box3 { 
+    grid-area: box3; 
+    height: 40vh;
+    padding: 10px;
+    border: 2px green solid;
+}
+
+.box4 { 
+    grid-area: box4;
+    height: 40vh;
+    padding: 10px;
+    border: 2px yellow solid;
+}
+
+.box5 {
+    grid-area: box5;
+    height: 40vh;
+    padding: 10px;
+    border: 2px purple solid;
+}

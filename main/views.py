@@ -1,16 +1,15 @@
 from main import app
-# from app.forms import *
-from flask import render_template
+from main.forms import *
+from flask import render_template, request
 
-# from app.models import Inventory
+from main.models import Inventory
 
-@app.route("/")
+@app.route("/", methods=["GET", "POST"])
 def index():
     """
     Index/Home page of web application
     """
-
-    ## Query all items from database
-    # items = Inventory.query.order_by(Inventory.id)
-    # return render_template("index.html", items=items, forms=[AddForm(), EditForm(), DeleteForm(), ExportForm()])
-    return "hiu"
+    
+    # Query all items from database
+    items = Inventory.query.order_by(Inventory.id)
+    return render_template("index.html", items=items, forms=[AddForm(), EditForm(), DeleteForm()])

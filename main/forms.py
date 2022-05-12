@@ -1,5 +1,7 @@
+from secrets import choice
 from flask_wtf import FlaskForm
-from wtforms import StringField, IntegerField, SubmitField
+from sqlalchemy import null
+from wtforms import StringField, IntegerField, SubmitField, SelectField
 from wtforms.validators import DataRequired
 
 class AddForm(FlaskForm):
