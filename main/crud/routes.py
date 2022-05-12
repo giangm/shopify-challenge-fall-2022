@@ -14,8 +14,7 @@ def add():
         ## Get request parameters
         item_name = request.form["item_name"].strip()
         item_quantity = int(request.form["item_quantity"].strip())
-        warehouse_id = int(request.form["warehouse_id"])
-
+        
         ## Check if inputs/parameters are empty
         if item_name is None or item_quantity is None or item_name == "" or item_quantity == "":
             ## Log empty input/parameter event
@@ -37,7 +36,7 @@ def add():
 
         if item is None:
             ## Insert new row
-            item = Inventory(warehouse_id=warehouse_id, item_name=item_name, item_quantity=item_quantity)
+            item = Inventory(item_name=item_name, item_quantity=item_quantity)
             db.session.add(item)
             ## Log event
             app.logger.info(f"Inserted {item}")
