@@ -4,16 +4,16 @@ html, body {
     overflow-y: hidden;
 }
 
-.containerbox {
+.containerboxone {
     display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1fr; 
     gap: 10px 10px; 
     grid-template-areas: 
-        "headerbox headerbox headerbox headerbox"
-        "box1 box2 box3 box4"
-        "box5 box5 box5 box5";
-  }
+        "headerbox headerbox headerbox"
+        "box1 box2 box3"
+        "containerboxtwo containerboxtwo containerboxtwo";
+}
 
 .headerbox {
     grid-area: headerbox; 
@@ -27,40 +27,61 @@ html, body {
     grid-template-rows: 1fr; 
     gap: 10px 10px;
     grid-template-areas: 
-        ". msg .";
+        "title msg .";
+}
+
+.title {
+    grid-area: title;
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+.msg {
+    grid-area: msg;
 }
 
 .box1 { 
     grid-area: box1; 
-    height: 40vh;
+    height: 35vh;
     padding: 10px;
     border: 2px red solid;
 }
 
 .box2 { 
     grid-area: box2;
-    height: 40vh;
+    height: 35vh;
     padding: 10px;
     border: 2px blue solid;
 }
 
 .box3 { 
     grid-area: box3; 
-    height: 40vh;
+    height: 35vh;
     padding: 10px;
     border: 2px green solid;
 }
 
-.box4 { 
+.containerboxtwo {
+    grid-area: containerboxtwo;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 10px 10px; 
+    grid-template-areas: 
+        "box5 box4";
+}
+
+.box4 {
     grid-area: box4;
-    height: 40vh;
+    height: 50vh;
     padding: 10px;
-    border: 2px yellow solid;
+    border: 2px rgb(162, 166, 85) solid;
 }
 
 .box5 {
     grid-area: box5;
-    height: 40vh;
+    height: 50vh;
     padding: 10px;
     border: 2px purple solid;
 }
+

@@ -1,8 +1,6 @@
-from secrets import choice
 from flask_wtf import FlaskForm
-from sqlalchemy import null
-from wtforms import StringField, IntegerField, SubmitField, SelectField
-from wtforms.validators import DataRequired
+from wtforms import StringField, IntegerField, SubmitField, TextAreaField, SelectMultipleField, widgets
+from wtforms.validators import DataRequired, Optional
 
 class AddForm(FlaskForm):
     """
@@ -34,8 +32,9 @@ class DeleteForm(FlaskForm):
     """
     Used to create Delete Item form
     """
-    
     # String input field for item name
     item_name = StringField("Item Name", validators=[DataRequired()])
+    # String input field for comments
+    comments = TextAreaField("Comments", validators=[Optional()])
     # Form submit button
     submit = SubmitField("Delete item")

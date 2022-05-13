@@ -10,8 +10,11 @@
         <title>Inventory Tracker</title>
     </head>
     <body>
-        <div class="containerbox">
+        <div class="containerboxone">
             <div class="headerbox">
+                <div class="title">
+                    <p>INVENTORY TRACKER</p>
+                </div>
                 <div class="msg">
                     {% with messages = get_flashed_messages() %}
                         {% if messages %}
@@ -75,35 +78,71 @@
                     </p>
 
                     <p>
+                        {{ forms[2].comments.label }}
+                        <br/><br/>
+                        {{ forms[2].comments }}
+                    </p>
+
+                    <p>
                         {{ forms[2].submit }}
                     </p>
                 </form>
             </div>
-            <div class="box4">
-                <h2>FEATURE:</h2>
-            </div>
         </div>
-       
-        <div class="box5">
-            <h2>Inventory listing:</h2>
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">Item Name</th>
-                        <th scope="col">Quantity</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for item in items %}
-                    <tr>
-                        <th scope="row">{{ item.id }}</th>
-                        <td>{{ item.item_name }}</td>
-                        <td>{{ item.item_quantity }}</td>
-                    </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
+    
+        <div class="containerboxtwo">
+            <div class="box5">
+                <h2>Inventory listing:</h2>
+                <div style="overflow-y: scroll; height: 40vh;">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Item Name</th>
+                                <th scope="col">Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for item in items %}
+                            <tr>
+                                <th scope="row">{{ item.id }}</th>
+                                <td>{{ item.item_name }}</td>
+                                <td>{{ item.item_quantity }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="box4">
+                <form action="/confirm_deletion" method="POST">
+                    <h2>Deleted Items:</h2>
+                    <div style="overflow-y: scroll; height: 35vh;">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">&nbsp;&nbsp;&nbsp;&nbsp;ID</th>
+                                    <th scope="col">Item Name</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Comment</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for item in deleted_items %}
+                                    <tr>
+                                        <th scope="row"><input type="checkbox" id="items" name="items" value="{{ item.item_id }}">&nbsp;&nbsp;{{ item.item_id }}</th>
+                                        <td>{{ item.item_name }}</td>
+                                        <td>{{ item.item_quantity }}</td>
+                                        <td>{{ item.comments }}</td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    <input type="submit" name="button" value="Confirm Delete" style="margin: 1.5em 0;">
+                    <input type="submit" name="button" value="Undelete Item(s)" style="margin: 1.5em 0;">
+                </form>
+            </div>    
         </div>
     </body>
 </html>
