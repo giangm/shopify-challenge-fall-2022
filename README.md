@@ -94,7 +94,7 @@ docker run --rm --privileged -p 5000:5000 inventoryapp
 Open `localhost:5000` in your browser to view web application.
 
 
-## Reference
+## References
 
 - [Flask](https://flask.palletsprojects.com/en/2.0.x/)
 - [Flask-SQLalchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/)
