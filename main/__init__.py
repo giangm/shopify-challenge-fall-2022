@@ -20,7 +20,10 @@ logging.basicConfig(filename="app.log", level=logging.DEBUG, format=f"%(asctime)
 from main import views
 from main.crud.routes import crud
 from main.features.routes import features
+from main.handlers import errors
+
 
 # Register blueprints
 app.register_blueprint(crud)
 app.register_blueprint(features)
+app.register_blueprint(errors)
