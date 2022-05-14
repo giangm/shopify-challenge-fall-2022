@@ -6,10 +6,12 @@ An inventory tracking web application for a logistics company with CRUD and unde
 
 ```
 .
+├── Dockerfile
 ├── README.md
 ├── app.log
 ├── config.py
-├── flaskrun
+├── flaskrun.bat
+├── flaskrun.sh
 ├── main
 │   ├── __init__.py
 │   ├── crud
@@ -18,15 +20,23 @@ An inventory tracking web application for a logistics company with CRUD and unde
 │   ├── features
 │   │   └── routes.py
 │   ├── forms.py
+│   ├── handlers.py
 │   ├── models.py
 │   ├── static
-│   │   └── css
-│   │       └── styles.css
+│   │   ├── css
+│   │   │   └── styles.css
+│   │   └── img
+│   │       └── favicon.ico
 │   ├── templates
+│   │   ├── errors
+│   │   │   ├── 404.html
+│   │   │   └── 500.html
 │   │   └── index.html
 │   └── views.py
+├── poetry.lock
+├── pyproject.toml
 ├── requirements.txt
-├── run.py
+└── run.py
 ```
 
 ## Future Development
