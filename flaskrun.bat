@@ -3,11 +3,8 @@
 :: Install required libraries
 pip install -r requirements.txt
 
-:: Assigning command line argument to env
-if [%1]==[] (env = "production") else (env = %1)
-
 :: Setting environment variables
-set FLASK_ENV=env
+if [%1]==[] (set FLASK_ENV=production) else (set FLASK_ENV=%1)
 set FLASK_APP=run.py
 
 :: Running flask app
