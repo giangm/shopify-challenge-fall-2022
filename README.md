@@ -52,3 +52,18 @@ Once the script finishes running, a browser should open, showcasing the web appl
 
 
 ## 
+
+
+## Run with Docker
+Please make sure you have [Docker](https://docs.docker.com/get-docker/) installed on your system.
+
+Build the docker image:
+```
+docker build -t inventoryapp .
+```
+Run the docker container:
+```
+docker run --rm --privileged -p 5000:5000 inventoryapp
+```
+
+Open `localhost:5000` in your browser to view web application.
