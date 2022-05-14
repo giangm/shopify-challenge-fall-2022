@@ -53,7 +53,7 @@ Review the content below for instructions on how to run this web application.
 
 Visit this project website, https://replit.com/@giangm/shopify-challenge-fall-2022#run.py, to access the project. Once the page is loaded, click on the green `Run` button. The web application should start within a few seconds.
 
-**PLEASE open the application in full screen by clicking the `Open website` button so that all elements are loaded/visable on the screen.**
+**After the app is started, please open the application in full screen by clicking the `Open website` button or view https://shopify-challenge-fall-2022--giangm.repl.co/ in a new tab. This ensures that all elements are loaded/visable on the screen.**
 
 
 ## Run on Windows environment
