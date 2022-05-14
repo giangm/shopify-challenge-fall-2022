@@ -39,16 +39,9 @@ An inventory tracking web application for a logistics company with CRUD and unde
 
 ## Run using Replit
 
-Using the `Shell` provided by Replit, run the following command to start the web application in production environment:
-```
-./flaskrun.sh 
-```
-Or run the following command to start the web application in development environment:
-```
-./flaskrun.sh development
-```
+Visit this project website, https://replit.com/@giangm/shopify-challenge-fall-2022#run.py, to access the project. Once the page is loaded, click on the green `Run` button. The web application should start within a few seconds.
 
-Once the script finishes running, a browser should open, showcasing the web application. Click on the "Open in a new tab" icon to open the app in a bigger window (Recommended so that all elements load).
+**PLEASE open the application in full screen by clicking the `Open website` button so that all elements are loaded/visable on the screen.**
 
 
 ## Run on Windows environment
@@ -64,7 +57,7 @@ Run the following command using `CMD` terminal to install required libraries and
 flaskrun.bat
 ```
 
-Open `localhost:5000` in your browser to view web application.
+Open `localhost:8080` in your browser to view web application.
 
 
 ## Run on Linux/MacOS environment
@@ -80,7 +73,7 @@ Run the following command using a terminal to install required libraries and sta
 flaskrun.sh
 ```
 
-Open `localhost:5000` in your browser to view web application.
+Open `localhost:8080` in your browser to view web application.
 
 
 ## Run with Docker
@@ -95,7 +88,7 @@ Run the following command to run the docker container:
 docker run --rm --privileged -p 5000:5000 inventoryapp
 ```
 
-Open `your_ip_address:5000` in your browser to view web application.
+Open `your_ip_address:8080` in your browser to view web application.
 
 
 ## References
