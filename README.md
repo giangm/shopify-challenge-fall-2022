@@ -59,7 +59,7 @@ Run the following command to clone the repository:
 git clone https://github.com/giangm/shopify-challenge-fall-2022.git
 ```
 
-Run the following command using `CMD` terminal to install required libraries and start the web application:
+Run the following command using `CMD` terminal to install required libraries and start the web application in production environment:
 ```
 flaskrun.bat
 ```
@@ -73,7 +73,7 @@ Run the following command to clone the repository:
 git clone https://github.com/giangm/shopify-challenge-fall-2022.git
 ```
 
-Run the following command using a terminal to install required libraries and start the web application:
+Run the following command using a terminal to install required libraries and start the web application in production environment:
 ```
 flaskrun.sh
 ```
