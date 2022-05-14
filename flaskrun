@@ -1,6 +1,13 @@
 #!/bin/bash
 
-export FLASK_ENV=development
+if [ $# -eq 0 ]
+    then
+        env="production"
+else
+    env=$1
+fi
+
+export FLASK_ENV=$env
 export FLASK_APP=run.py
 
 flask run
