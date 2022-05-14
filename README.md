@@ -91,7 +91,7 @@ Run the following command to run the docker container:
 docker run --rm --privileged -p 5000:5000 inventoryapp
 ```
 
-Open `localhost:5000` in your browser to view web application.
+Open `your_ip_address:5000` in your browser to view web application.
 
 
 ## References
