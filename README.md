@@ -37,31 +37,56 @@ An inventory tracking web application for a logistics company with CRUD and unde
 - More error handlers can be added in main/handlers.py.
   - A corresponding error page should be created in main/templates/errors/.
 
-## Replit
+## Run using Replit
 
 Using the `Shell` provided by Replit, run the following command to start the web application in production environment:
 ```
-./flaskrun 
+./flaskrun.sh 
 ```
 Or run the following command to start the web application in development environment:
 ```
-./flaskrun development
+./flaskrun.sh development
 ```
 
 Once the script finishes running, a browser should open, showcasing the web application. Click on the "Open in a new tab" icon to open the app in a bigger window (Recommended so that all elements load).
 
 
-## 
+## Run on Windows environment
+Please make sure that [Python](https://www.python.org/downloads/), pip, and git is installed.
+
+Run the following command to clone the repository:
+```
+git clone https://github.com/giangm/shopify-challenge-fall-2022.git
+```
+
+Run the following command using `CMD` terminal to install required libraries and start the web application:
+```
+flaskrun.bat
+```
+
+
+## Run on Linux environment
+Please make sure that [Python](https://www.python.org/downloads/), pip, and git is installed.
+
+Run the following command to clone the repository:
+```
+git clone https://github.com/giangm/shopify-challenge-fall-2022.git
+```
+
+Run the following command using a terminal to install required libraries and start the web application:
+```
+flaskrun.sh
+```
 
 
 ## Run with Docker
 Please make sure you have [Docker](https://docs.docker.com/get-docker/) installed on your system.
 
-Build the docker image:
+Run the following command to build the docker image:
 ```
 docker build -t inventoryapp .
 ```
-Run the docker container:
+Run the following command to run the docker container:
 ```
 docker run --rm --privileged -p 5000:5000 inventoryapp
 ```
