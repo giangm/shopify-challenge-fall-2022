@@ -67,7 +67,7 @@ flaskrun.bat
 Open `localhost:5000` in your browser to view web application.
 
 
-## Run on Linux environment
+## Run on Linux/MacOS environment
 Please make sure that [Python](https://www.python.org/downloads/), pip, and git is installed.
 
 Run the following command to clone the repository:
