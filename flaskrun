@@ -12,4 +12,4 @@ fi
 export FLASK_ENV=$env
 export FLASK_APP=run.py
 
-flask run
+python run.py
