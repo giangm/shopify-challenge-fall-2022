@@ -2,6 +2,8 @@
 
 An inventory tracking web application for a logistics company with CRUD and undelete features. This web application is written using FLASK (Python) to showcase backend coding.
 
+Review the content below for instructions on how to run this web application.
+
 ## Flask Application Structure
 
 ```
