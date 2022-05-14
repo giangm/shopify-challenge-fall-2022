@@ -30,12 +30,12 @@ An inventory tracking web application for a logistics company with CRUD and unde
 ```
 
 ## Future Development
-- New/different flask configurations can be added to config.py.
-- New features can be added in main/features/routes.py.
-- New page views can be added in main/views.py.
-- New database tables can be created in main/models.py.
-- More error handlers can be added in main/handlers.py.
-  - A corresponding error page should be created in main/templates/errors/.
+- New/different flask configurations can be added to `config.py`.
+- New features can be added in `main/features/routes.py`.
+- New page views can be added in `main/views.py`.
+- New database tables can be created in `main/models.py`.
+- More error handlers can be added in `main/handlers.py`.
+  - A corresponding error page should be created in `main/templates/errors/`.
 
 ## Run using Replit
 
@@ -64,6 +64,8 @@ Run the following command using `CMD` terminal to install required libraries and
 flaskrun.bat
 ```
 
+Open `localhost:5000` in your browser to view web application.
+
 
 ## Run on Linux environment
 Please make sure that [Python](https://www.python.org/downloads/), pip, and git is installed.
@@ -77,6 +79,8 @@ Run the following command using a terminal to install required libraries and sta
 ```
 flaskrun.sh
 ```
+
+Open `localhost:5000` in your browser to view web application.
 
 
 ## Run with Docker
